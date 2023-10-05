@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title >video cars1</title>
+  <link rel="icon" href="cars 1.png" type="image/png">
+
+<style  type="text/css">
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 900%;
+  margin: 0 auto
+}
+.navbar {
+  width:100%;
+  overflow: hidden;
+  height: 60px;
+  line-height: 40px;
+ /* background: #354d62;*/
+  opacity: 0.9;
+ /* border-bottom: 2px solid rgb(238, 12, 189);*/
+ /* margin-bottom: 18px;*/
+}
+.logo{
+color: #e145d2;
+  width: 100px;
+  float:left;
+  
+}
+.logo:hover{
+  transform: scaleX(1.7);
+ color: white;
+}
+  
+/* this is for ul tag */
+.menu{
+  float:right;
+  
+  
+}
+.menu li{
+  padding-top: 0px;
+  float:left;
+  width:150px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  list-style: none;
+}
+.menu li a{
+   
+    border: 2px solid#5ca8b7;
+    border-radius: 18px;
+  color: #f82dc9;
+ 
+  text-decoration: none;
+  font-family: calibri;
+  text-transform: uppercase;
+  display:block;
+}
+.menu li:hover{
+  background: #e72bc4
+  border-radius: 18px;
+  width: 200px;
+  transition:  0.7s ease;
+  opacity: 0.7;
+}
+.menu li a:hover{
+  border: 2px solid#f82dc9;
+  color: #fff
+}
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+ /* filter: brightness(50%);*/
+}
+
+
+
+/*-------------*/
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/*--------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<div class="navbar">
+    <div class="container">
+    <div class="logo">
+        <h1>INSTACARS</h1>
+      </div>
+      <div class="navbar_links">
+        <ul class="menu">
+          <li><a href="file:///C:/Users/gpesh/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%D0%BD%20%D0%BF%D0%BB%D0%BE%D1%82/kurs%20Kremikovci/Instacars%204.html"><i class="fa fa-home"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fa fa-globe"></i></a></li>
+        </ul>
+      </div>
+    </div>
+ 
+  <video playsinline autoplay muted loop poster="TheGuide.jpg" id="myVideo">
+    <source src="cars 4.mp4" type="video/mp4">
+  </video>
+
+
+
+
+<!-- *********************** -->
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum...</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+
+<!-- ************************ -->
+
+
+
+
+
+</div>
+
+
+<!--  -->
+<script>
+  var video = document.getElementById("myVideo");
+  var btn = document.getElementById("myBtn");
+  
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+  
+<!--  -->
+
+
+
+</body>
+</html>
+<!--
+<video src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" loop class="hover-to-play w-100">
+</video>
+
+-->
